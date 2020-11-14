@@ -1,0 +1,57 @@
+:: StoryTitle
+Thanls to Idm
+
+:: StoryData
+{
+    "ifid": "",
+    "format": "Snowman",
+}
+
+:: UserScript[script]
+$(document).on('sm.passage.showing', function(event, passage) {
+
+  $("tw-passage").hide(0).fadeIn(2000);
+
+});
+
+:: Start
+[[A call from family]]
+
+:: A call from family
+[[The fake serial problem]]
+
+::The fake serial problem
+[[Cant download the crack]]
+
+:: Cant download the crack
+[[Actual crack download]]
+
+:: Actual crack download
+[[Exit idm]]
+
+:: Exit idm
+[[Up and running]]
+
+:: Up and running
+[[Really?]]
+
+[[Perspolis]]
+
+:: Really?
+[[Yes]]
+
+[[Perspolis]]
+
+::Yes
+OK! Thanks
+
+:: Perspolis
+[[Final solution]]
+
+[[Paid solution]]
+
+:: Final solution
+your the man
+
+:: Paid solution
+your the man with money
