@@ -67,7 +67,15 @@ a:active {
 
 مرورگر را باز می‌کنید
 
-<img src="error-fa.png" width="50%" height="auto">
+
+<div id="error"></div>
+<%
+    $(function() {
+        $("#error").html('<img src="error-fa.png" width="50%" height="auto">');
+        $("#error").hide(0).fadeIn(3000).delay(0);
+    });
+%>
+
 
 [[کرک آی دی اِم را دانلود میکنم->Cant download the crack]]
 
