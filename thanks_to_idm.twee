@@ -23,7 +23,8 @@ body {
     color: white;
     text-align: center;
   	direction: rtl;
-    font-size: x-large;
+    font-size: large;
+    margin-top: 5%;
 }
 
 a:link {
