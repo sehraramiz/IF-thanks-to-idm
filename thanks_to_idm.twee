@@ -1,57 +1,187 @@
 :: StoryTitle
 Thanls to Idm
 
-:: StoryData
-{
-    "ifid": "",
-    "format": "Snowman",
-}
-
 :: UserScript[script]
-$(document).on('sm.passage.showing', function(event, passage) {
+$(window).on('sm.passage.showing', function(event, passage) {
 
-  $("tw-passage").hide(0).fadeIn(2000);
+  $("tw-passage").hide(0).fadeIn(1000);
 
 });
 
-:: Start
-[[A call from family]]
+:: UserStylesheet[stylesheet]
+@font-face {
+  font-family: Sans;
+  src: url(Iranian-Sans.ttf);
+}
 
-:: A call from family
-[[The fake serial problem]]
+* {
+    font-family: Sans;
+    background-color: black;
+}
+
+body {
+    color: white;
+    text-align: center;
+  	direction: rtl;
+    font-size: x-large;
+}
+
+a:link {
+    color: LightSeaGreen;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+:: Start
+
+تماسی از برادر خود دریافت می‌کنید
+
+به شما اطلاع می‌دهد که نرم‌افزار دانلودش دچار مشکل شده
+
+عکسی می‌فرستد
+
+[[عکس را باز میکنم->The fake serial problem]]
+
+
 
 ::The fake serial problem
-[[Cant download the crack]]
+با عکس زیر مواجه می‌شوید
 
-:: Cant download the crack
-[[Actual crack download]]
+همان مشکلی هست که حدس می‌زدید
 
-:: Actual crack download
-[[Exit idm]]
+برای حل مشکل به سراغ کامپیوتر برادرتان می‌روید
 
-:: Exit idm
-[[Up and running]]
+مرورگر را باز می‌کنید
 
-:: Up and running
-[[Really?]]
+<img src="error-fa.png" width="50%" height="auto">
 
-[[Perspolis]]
+[[کرک آی دی اِم را دانلود میکنم->Cant download the crack]]
 
-:: Really?
-[[Yes]]
 
-[[Perspolis]]
+
+::Cant download the crack
+
+با همان ارور سریال جعلی مواجه می‌شوید
+
+چرا که افزونه‌ی آی دی اِم دانلود ها را به خود نرم‌افزار آی دی اِم واگزار
+
+[[افزونه را غیرفعال می‌کنم->Actual crack download]]
+
+
+
+::Actual crack download
+
+کرک را باز می‌کنید، اما فایل فشرده از شما پسورد می‌خواهد
+
+کرک را از پی‌سی‌دانلود دانلود کرده اید.
+
+[[پسورد ( www.p30download.com ) را وارد می‌کنم->Exit idm]]
+
+
+
+::Exit idm
+
+مراحل کرک را همانطور که بارها برای دوستان و آشنایان انجام داده اید انجام می‌دهید.
+
+[[سیستم را تحویل برادرم می‌دهم->Up and running]]
+
+
+
+::Up and running
+
+خیلی خوب
+بار دیگر، کرکی دیگر و لذت دیدن لبخند برادر از معجزه‌ای که انجام داده‌اید
+
+شما هم لبخندی تحویل می‌دهید اما ته دل خود می‌دانید که این اولین بار نبوده و آخرین بار هم نخواهد بود
+
+[[تا کرک بعدی با او خداحافظی می‌کنم->Really?]]
+
+[[دیگر کافیست، به دنبال راه حل نهایی میگردم->Perspolis]]
+
+
+
+
+::Really?
+
+آیا واقعا تصمیم دارید تا پایان زندگی خود به همین روند ادامه دهید؟
+
+[[بله->Yes]]
+
+[[خیر مرا به راه بهتر هدایت کن->Perspolis]]
+
+
 
 ::Yes
-OK! Thanks
 
-:: Perspolis
-[[Final solution]]
+ممنونم از توجه شما
 
-[[Paid solution]]
+با آرزوی موفقیت
 
-:: Final solution
-your the man
 
-:: Paid solution
-your the man with money
+
+::Perspolis
+
+درود بر تو ای جوینده‌ی راه‌حل نهایی
+
+آخر تا به کی کرک سریال جعلی
+
+بله، همه با آی دی اِم خاطره ها داریم
+
+همه او را دوست داریم
+
+اما چند بار ارور سریال جعلی حاصل شود که دریابیم آی دی اِم ما را (به رایگان) دوست ندارد؟
+
+[[با تشکر از آی دی اِم راه حل نهایی را نشانم بده->Final solution]]
+
+[[هیچ چیزی برایم جای آی دی اِم را نمی‌گیرد، راه حلی نشانم بده->Paid solution]]
+
+
+
+::Final solution
+
+از امروز تا پایان روزهای خود برای دوستان وآشنایان پرسپولیس نصب کنید
+
+نمود نرم‌افزاری که توسط یک جوانِ استاد دانلودِ ایرانی ساخته شده
+
+<a target="_blank" href="https://persepolisdm.github.io/">دانلود نرم‌افزار مدیریت دانلود پرسپولیس</a>
+
+درود بر تو ای دوست جسور من
+
+به پاس این جسارت و شجاعت
+
+و قدمی که در جهت ترویج نرم‌افزار آزاد، حق مالکیت نرم‌افزار و کالای ایرانی برداشتی
+
+به تو نشان <span style="color: yellow;">ویندوز‌عوض‌کُنِ جسور</span> را اعطا می‌کنم
+
+باشد که این سنت را تا آخرین روزهایت ادامه دهی
+
+<div id="badge"></div>
+<%
+ _.delay(
+  function() {
+    $("#badge").html('<img class="glowing" src="jasoor1.png" width="auto" height="250px">');
+	$("#badge").hide(0).fadeIn(3000);
+  },
+  1000);
+%>
+
+
+
+::Paid solution
+
+نسخه‌ی قانونی آی دی اِم را خریداری کنید.
+
+<a target="_blank" href="http://www.google.com/search?q=خرید+لایسنس+idm+&oq=خرید+لایسنس+idm">خرید سریال آی دی اِم</a>
