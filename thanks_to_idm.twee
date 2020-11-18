@@ -97,7 +97,29 @@ a:active {
 
 کرک را از پی‌سی‌دانلود دانلود کرده اید.
 
-[[پسورد ( www.p30download.com ) را وارد می‌کنم->Exit idm]]
+<label for="password2">رمز فایل فشرده:</label>
+<input style="color: white;" type="password" name="password" id="password3">
+
+<%
+
+$(function(){
+    $('#password3').keyup(function(){
+        var password = $('#password3');
+        var next = $('#nextPassage');
+        var nextPassageLink = '<a href="javascript:void(0)" data-passage="Exit idm">کرک را استخراج میکنم</a>';
+
+        if(password.val() == "www.p30download.com"){
+            next.html(nextPassageLink);
+        } else {
+            next.html("");
+        }
+    });
+});
+
+%>
+
+<br>
+<div id="nextPassage"></div>
 
 
 
