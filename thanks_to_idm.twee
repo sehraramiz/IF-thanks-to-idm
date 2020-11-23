@@ -243,7 +243,7 @@ $(function(){
 <%
  _.delay(
   function() {
-    $("#badge").html('<img class="glowing" src="jasoor1.png" width="auto" height="250px">');
+    $("#badge").html('<img src="jasoor1.png" width="auto" height="250px">');
 	$("#badge").hide(0).fadeIn(3000);
   },
   1000);
