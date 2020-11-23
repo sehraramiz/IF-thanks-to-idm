@@ -46,6 +46,10 @@ a:active {
     text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 :: Start
 
 تماسی از برادر خود دریافت می‌کنید
@@ -208,6 +212,15 @@ $(function(){
 باشد که این سنت را تا آخرین روزهایت ادامه دهی
 
 <div id="badge"></div>
+
+<br>
+
+<div id="memorial"></div>
+
+<br>
+
+<div id="form"></div>
+
 <%
  _.delay(
   function() {
@@ -215,6 +228,37 @@ $(function(){
 	$("#badge").hide(0).fadeIn(3000);
   },
   1000);
+%>
+
+<%
+ _.delay(
+  function() {
+    var jasoors = [
+        {name: "laghar", from: "shiraz"},
+        {name: "meran", from: "shiraz"},
+    ];
+
+    var names = "";
+    for (var person of jasoors) {
+        names += `<li><b>${person.name}</b> از ${person.from}</li>`;
+    }
+    var memorial = `
+        <h3>یادواره‌ی جسوران</h3>
+        <ul>${names}</ul>`
+
+    $("#memorial").html(memorial);
+	$("#memorial").hide(0).fadeIn(3000);
+  },
+  2000);
+%>
+
+<%
+ _.delay(
+  function() {
+    $("#form").html('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCGVtazUqzoH2NA9BE9_jW9-IcCoQX_ze4oYjyKtclHh_3kg/viewform?embedded=true" width="60%" height="480px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
+	$("#form").hide(0).fadeIn(3000);
+  },
+  4000);
 %>
 
 
