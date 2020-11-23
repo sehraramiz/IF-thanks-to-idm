@@ -46,8 +46,19 @@ a:active {
     text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 :: Start
@@ -215,7 +226,15 @@ $(function(){
 
 <br>
 
-<div id="memorial"></div>
+<h4 id="memorialHeader"></h4>
+<table style="width: 100%;"class="memorialTable">
+    <caption>
+    </caption>
+    <thead>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
 
 <br>
 
@@ -235,19 +254,24 @@ $(function(){
   function() {
     var jasoors = [
         {name: "laghar", from: "shiraz"},
-        {name: "meran", from: "shiraz"},
+        {name: "مهران هزار رشته", from: "شیراز"},
     ];
 
-    var names = "";
-    for (var person of jasoors) {
-        names += `<li><b>${person.name}</b> از ${person.from}</li>`;
-    }
-    var memorial = `
-        <h3>یادواره‌ی جسوران</h3>
-        <ul>${names}</ul>`
+    var memorialTableHead = `
+        <tr><th>نام</th>
+            <th>محل فعالیت</th>
+        </tr>`
 
-    $("#memorial").html(memorial);
-	$("#memorial").hide(0).fadeIn(3000);
+    var bodyString = '';
+    $.each(jasoors, function(index, ctry) {
+        bodyString += ('<tr><td>'+jasoors[index].name+'</td><td>'+jasoors[index].from+'</td></tr>');
+    });
+
+    $('#memorialHeader').html('یادواره‌ی جسوران');
+    $('.memorialTable thead').html(memorialTableHead);
+    $('.memorialTable tbody').html(bodyString);
+	$(".memorialTable").hide(0).fadeIn(3000);
+
   },
   2000);
 %>
