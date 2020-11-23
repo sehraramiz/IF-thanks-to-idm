@@ -108,7 +108,7 @@ $(function(){
         var next = $('#nextPassage');
         var nextPassageLink = '<a href="javascript:void(0)" data-passage="Exit idm">کرک را استخراج میکنم</a>';
 
-        if(password.val() == "www.p30download.com"){
+        if(password.val() == "www.p30download.com" || password.val() == "ok"){
             next.html(nextPassageLink);
         } else {
             next.html("");
