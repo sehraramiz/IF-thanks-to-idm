@@ -1,5 +1,5 @@
 :: StoryTitle
-Thanls to Idm
+با تشکر از آی‌دی‌اِم
 
 :: UserScript[script]
 $(window).on('sm.passage.showing', function(event, passage) {
