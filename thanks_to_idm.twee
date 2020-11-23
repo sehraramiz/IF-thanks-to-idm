@@ -134,6 +134,7 @@ $(function(){
 ::Up and running
 
 خیلی خوب
+
 بار دیگر، کرکی دیگر و لذت دیدن لبخند برادر از معجزه‌ای که انجام داده‌اید
 
 شما هم لبخندی تحویل می‌دهید اما ته دل خود می‌دانید که این اولین بار نبوده و آخرین بار هم نخواهد بود
@@ -181,7 +182,13 @@ $(function(){
 
 
 
-::Final solution
+:: Final solution
+
+<%
+    s.freeSoftwareLink = '<a target="_blank" href="https://fa.wikipedia.org/wiki/%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1_%D8%A2%D8%B2%D8%A7%D8%AF">نرم‌افزار آزاد</a>';
+    s.copyRightLink = '<a target="_blank" href="https://fa.wikipedia.org/wiki/%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1_%D9%85%D8%A7%D9%84%DA%A9%DB%8C%D8%AA%DB%8C">حق مالکیت نرم‌افزار</a>';
+    s.ergh = '<a target="_blank" href="https://www.google.com/search?q=عرق+ملی">کالای ایرانی</a>';
+%>
 
 از امروز تا پایان روزهای خود برای دوستان وآشنایان پرسپولیس نصب کنید
 
@@ -189,11 +196,12 @@ $(function(){
 
 <a target="_blank" href="https://persepolisdm.github.io/">دانلود نرم‌افزار مدیریت دانلود پرسپولیس</a>
 
+<br>
 درود بر تو ای دوست جسور من
 
 به پاس این جسارت و شجاعت
 
-و قدمی که در جهت ترویج نرم‌افزار آزاد، حق مالکیت نرم‌افزار و کالای ایرانی برداشتی
+و قدمی که در جهت ترویج <%= s.freeSoftwareLink %>، <%= s.copyRightLink %> و <%= s.ergh %> برداشتی
 
 به تو نشان <span style="color: yellow;">ویندوز‌عوض‌کُنِ جسور</span> را اعطا می‌کنم
 
