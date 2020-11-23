@@ -33,7 +33,7 @@ a:link {
 }
 
 a:visited {
-    color: blue;
+    color: LightSeaGreen;
     text-decoration: none;
 }
 
