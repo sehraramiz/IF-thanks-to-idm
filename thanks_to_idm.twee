@@ -25,6 +25,7 @@ body {
   	direction: rtl;
     font-size: large;
     margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 a:link {
@@ -238,7 +239,16 @@ $(function(){
 
 <br>
 
-<div id="form"></div>
+<div id="form" hidden>
+    <a target="_blank" href="https://forms.gle/2Ng8d91Lg4eXVzjAA">ثبت نام در یادواره‌ی جسوران</a>
+</div>
+<br>
+
+<div id="info" hidden>
+    <span>ساخته شده بوسیله‌ی </span> <a target="_blank" href="https://twinery.org/">Twine</a>
+    <br>
+    <a target="_blank" href="https://github.com/sehraramiz/IF-thanks-to-idm">کد منبع این داستان</a>
+</div>
 
 <%
  _.delay(
@@ -279,10 +289,17 @@ $(function(){
 <%
  _.delay(
   function() {
-    $("#form").html('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCGVtazUqzoH2NA9BE9_jW9-IcCoQX_ze4oYjyKtclHh_3kg/viewform?embedded=true" width="60%" height="480px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
 	$("#form").hide(0).fadeIn(3000);
   },
   4000);
+%>
+
+<%
+ _.delay(
+  function() {
+	$("#info").hide(0).fadeIn(3000);
+  },
+  5000);
 %>
 
 
