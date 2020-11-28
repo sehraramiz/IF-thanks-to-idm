@@ -111,7 +111,7 @@ tr:nth-child(even) {
 
 کرک را باز می‌کنید، اما فایل فشرده از شما پسورد می‌خواهد
 
-کرک را از پی‌سی‌دانلود دانلود کرده اید.
+کرک را از پی‌سی‌دانلود‌دات‌کام دانلود کرده اید.
 
 <label for="password2">رمز فایل فشرده:</label>
 <input style="color: white;" type="password" name="password" id="password3">
@@ -198,7 +198,7 @@ $(function(){
 
 
 
-:: Final solution
+::Final solution
 
 <%
     s.freeSoftwareLink = '<a target="_blank" href="https://fa.wikipedia.org/wiki/%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1_%D8%A2%D8%B2%D8%A7%D8%AF">نرم‌افزار آزاد</a>';
@@ -245,7 +245,10 @@ $(function(){
 <br>
 
 <div id="info" hidden>
-    <span>ساخته شده بوسیله‌ی </span> <a target="_blank" href="https://twinery.org/">Twine</a>
+    <span>ساخته شده بوسیله‌ی </span>
+        <a target="_blank" href="https://twinery.org/">Twine</a>
+        <a target="_blank" href="https://videlais.github.io/snowman/2/">Snowman</a>
+        <a target="_blank" href="https://dan-q.github.io/twee2/">Twee2</a>
     <br>
     <a target="_blank" href="https://github.com/sehraramiz/IF-thanks-to-idm">کد منبع این داستان</a>
 </div>
