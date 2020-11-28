@@ -269,7 +269,7 @@ $(function(){
 
     var memorialTableHead = `
         <tr><th>نام</th>
-            <th>محل فعالیت</th>
+            <th>محل تعویض ویندوز</th>
         </tr>`
 
     var bodyString = '';
@@ -278,6 +278,7 @@ $(function(){
     });
 
     $('#memorialHeader').html('یادواره‌ی جسوران');
+	$("#memorialHeader").hide(0).fadeIn(3000);
     $('.memorialTable thead').html(memorialTableHead);
     $('.memorialTable tbody').html(bodyString);
 	$(".memorialTable").hide(0).fadeIn(3000);
