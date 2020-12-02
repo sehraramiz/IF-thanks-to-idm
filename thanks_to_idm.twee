@@ -1,11 +1,20 @@
 :: StoryTitle
 با تشکر از آی‌دی‌اِم
 
+:: StoryData
+{
+    "ifid": "94A260A7-3614-45D1-8120-2BD23A501B4E"
+}
+
 :: UserScript[script]
-$(window).on('sm.passage.showing', function(event, passage) {
+$(window).on('show.sm.passage', function(event, passage) {
 
-  $("tw-passage").hide(0).fadeIn(1000);
+  $(".passage").hide(0).fadeIn(1000);
 
+});
+
+$(window).ready(function() {
+    $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
 });
 
 :: UserStylesheet[stylesheet]
@@ -270,15 +279,11 @@ $(function(){
         {name: "مهران هزار رشته", from: "شیراز"},
     ];
 
-    var memorialTableHead = `
-        <tr><th>نام</th>
-            <th>محل تعویض ویندوز</th>
-        </tr>`
+    var memorialTableHead = "<tr><th>نام</th><th>محل تعویض ویندوز</th></tr>"
 
     var bodyString = '';
-    $.each(jasoors, function(index, ctry) {
-        bodyString += ('<tr><td>'+jasoors[index].name+'</td><td>'+jasoors[index].from+'</td></tr>');
-    });
+    for(var index = 0; index < jasoors.length; index++)
+        bodyString += ('<tr><td>' + jasoors[index].name + '</td><td>' + jasoors[index].from + '</td></tr>');
 
     $('#memorialHeader').html('یادواره‌ی جسوران');
 	$("#memorialHeader").hide(0).fadeIn(3000);
