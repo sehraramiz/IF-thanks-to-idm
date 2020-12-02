@@ -286,10 +286,10 @@ $(function(){
         bodyString += ('<tr><td>' + jasoors[index].name + '</td><td>' + jasoors[index].from + '</td></tr>');
 
     $('#memorialHeader').html('یادواره‌ی جسوران');
-	$("#memorialHeader").hide(0).fadeIn(3000);
+	$('#memorialHeader').hide(0).fadeIn(3000);
     $('.memorialTable thead').html(memorialTableHead);
     $('.memorialTable tbody').html(bodyString);
-	$(".memorialTable").hide(0).fadeIn(3000);
+	$('.memorialTable').hide(0).fadeIn(3000);
 
   },
   2000);
