@@ -32,7 +32,7 @@ body {
     color: white;
     text-align: center;
   	direction: rtl;
-    font-size: large;
+    font-size: small;
     margin-top: 5%;
     margin-bottom: 10%;
 }
