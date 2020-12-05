@@ -120,10 +120,12 @@ tr:nth-child(even) {
 
 کرک را باز می‌کنید، اما فایل فشرده از شما پسورد می‌خواهد
 
-کرک را از پی‌سی‌دانلود‌دات‌کام دانلود کرده اید.
+کرک را از پی‌سی‌دانلود دانلود کرده اید.
 
-<label for="password2">رمز فایل فشرده:</label>
+<p>رمز فایل فشرده: www.p30download.com</p>
+<label for="password2">رمز را وارد کنید: </label>
 <input style="color: white;" type="password" name="password" id="password3">
+<br>
 
 <%
 
