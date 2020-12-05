@@ -33,8 +33,12 @@ body {
     text-align: center;
   	direction: rtl;
     font-size: small;
-    margin-top: 5%;
+    margin-top: 20%;
     margin-bottom: 10%;
+}
+
+#main {
+    line-height: 180%;
 }
 
 a:link {
