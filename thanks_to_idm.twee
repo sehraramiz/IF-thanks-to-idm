@@ -283,6 +283,7 @@ $(function(){
     var jasoors = [
         {name: "laghar", from: "shiraz"},
         {name: "مهران هزار رشته", from: "شیراز"},
+        {name: "علی نجفی", from: "شیراز"},
     ];
 
     var memorialTableHead = "<tr><th>نام</th><th>محل تعویض ویندوز</th></tr>"
