@@ -284,6 +284,7 @@ $(function(){
         {name: "laghar", from: "shiraz"},
         {name: "مهران هزار رشته", from: "شیراز"},
         {name: "علی نجفی", from: "شیراز"},
+        {name: "امیر", from: "straight outta FAZEL"},
     ];
 
     var memorialTableHead = "<tr><th>نام</th><th>محل تعویض ویندوز</th></tr>"
